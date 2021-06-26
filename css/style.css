@@ -1,3 +1,50 @@
-body {
-    background-image: url(https://images.unsplash.com/photo-1601924582970-9238bcb495d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+* {
+    margin: auto;
+    padding: auto;
+}
+
+
+body nav{
+    float: right;
+    display: inline-block;
+    overflow: auto;
+    text-align: center;
+   
+}
+
+body .navbar ul {
+    list-style-type: none;
+    background: url("images/image1.jpg");
+    
+   
+    
+   
+    
+    
+}
+
+.navbar ul li {
+    display: inline-block;
+   
+  
+   
+}
+.navbar ul li a{
+    float: none;
+    display: block;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 25px;
+    color: black;
+}
+
+.navbar ul li a:hover{
+    color: crimson;
+}
+
+body .sec {
+     background: url("images/image1.jpg");
+    background-size: cover;
+    
+    
 }
