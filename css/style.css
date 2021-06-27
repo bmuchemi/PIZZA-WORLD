@@ -61,3 +61,7 @@ body .sec {
    opacity: 200%;
    background-color: transparent;
 }
+
+.card .order1 {
+    padding-left: 40%;
+}
