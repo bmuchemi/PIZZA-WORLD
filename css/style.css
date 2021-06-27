@@ -43,11 +43,22 @@ body .navbar ul {
     color: crimson;
 }
 
+
+
 body .sec {
      background: url("images/image1.jpg");
     background-size: cover;
     
     
+}
+
+.sec img {
+    position: relative;
+}
+.sec .barrelRoll {
+    position: sticky;
+    float: right;
+    margin-bottom: 30%;
 }
 
 #image1 {
