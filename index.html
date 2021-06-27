@@ -78,9 +78,11 @@
             </div>
         </div>
     </section>
-    <div class="container">
+    <br>
+    <br>
+  <div class="card row">   
+    <div class="container new">
       <h2>Order now</h2>
-      <div class="card">
         <h2>Order</h2>
         <form action="">
           <div class="field">
@@ -98,17 +100,42 @@
             <label for="crust">Pizza Crust: </label><br>
             <select id="crust" placeholder="Select crust">
                 <option class="form-control"></option>
-                <option class="form-control" value="Thin Crust">Thin Crust</option>
-                <option class="form-control" value="Thick Crust">Thick Crust</option>
-                <option class="form-control" value="Flatbread Crust">Flatbread Crust</option>
-                <option class="form-control" value="Focaccia Crust">Focaccia Crust</option>
-                <option class="form-control" value="Custom Crust">Custom Crust</option>
-                <option class="form-control" value="Astoria Rising Crust">Astoria Rising Crust</option>
-                <option class="form-control" value="Authentic Wood Fired Crust">Authentic Wood Fired Crust</option>
+                <option class="form-control" value="Hawaiian">Hawaiian pizza</option>
+                <option class="form-control" value="Buffalo">Buffalo pizza</option>
+                <option class="form-control" value="Meat">Meat pizza</option>
+                <option class="form-control" value="Veggie">Veggie pizza</option>
+                <option class="form-control" value="Cheese">Cheese pizza</option>
+                <option class="form-control" value="Pepperoni">Pepperoni pizza</option>
             </select>
         </div>
+        <br>
+
+        <div class="field">
+          <label for="toppings">Select toppings: </label><br>
+          <select id="toppings" placeholder="Toppings">
+              <option class="form-control" ></option>
+              <option class="form-control" value="Extra-cheese">Extra-cheese</option>
+              <option class="form-control" value="Bacon">Bacon</option>
+              <option class="form-control" value="Sausage">Sausage</option>
+              <option class="form-control" value="Mushroom">Mushroom</option>
+              <option class="form-control" value="Fresh-garlic">Fresh-garlic</option>
+          </select>
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="quan">Quantity: </label><br>
+        <input type="number" class="form-control" id="quantity"  placeholder="input quantity"  min="1" max="100" required>
+    </div>
+    <br>
+   
+       <button id="order" type="button" class="btn btn-success" >Order!!</button>
         </form>
       </div>
+      <div class="col-md-5 col-lg-5" id="btn">
+              
+        <button id="delivery" type="button" class="btn btn-success" style="text-align: center;">Delivery</button>
+      </div>   
     </div>
 </body>
 </html>
