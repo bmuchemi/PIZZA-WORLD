@@ -1,28 +1,28 @@
 function Pizza(size, crust, toppings, quantity) {
-    this.size = size;
-    this.crust = crust;
-    this.toppings = toppings;
-    this.quantity = quantity;
+    this.pSize = size;
+    this.pCrust = crust;
+    this.pToppings = toppings;
+    this.pQuantity = quantity;
   }
-  Order.prototype.new = function() {
+  Pizza.prototype.new = function() {
       return "Your Order // Size:" + this.pizzaSize + ", Crust:" + this.pizzaCrust + ", Toppings:" + this.topping + ", Quantity:" + this.quantity 
     };
 
-    var pizza=[];
+    
 function placeOrder() {
-  var size = document.getElementById("size").value;
- console.log(size);
-  var crust = document.getElementById("crust").value;
-  console.log(crust);
-  var toppings = document.getElementById("toppings").value;
-  console.log(toppings);
-  var quantity = document.getElementById("quantity").value;
-  console.log(quantity);
+  var pSize = document.getElementById("size").value;
+ console.log(pSize);
+  var pCrust = document.getElementById("crust").value;
+  console.log(pCrust);
+  var pToppings = document.getElementById("toppings").value;
+  console.log(pToppings);
+  var pQuantity = document.getElementById("quantity").value;
+  console.log(pQuantity);
 
-  var placeNewOrder = new Pizza(size, crust, toppings, quantity);
+  var placeNewOrder = new Pizza(pSize, pCrust, pToppings, pQuantity);
 
   if($("select#size").val()==="Large"){
-    var sizeprice = 1200;
+    var sizePrice = 1200;
   }else if($("select#size").val()==="Medium"){
     var sizePrice = 800;
   }else if($("select#size").val()==="Small"){
@@ -61,10 +61,10 @@ function placeOrder() {
       alert('Please Enter Topping')
 
       var de = 5;
-  var price = parseInt(sizePrice) * (parseInt(crustSize) + parseInt(topppingsPrice));
+  var price = parseInt(sizePrice) + (parseInt(crustSize) + parseInt(topppingsPrice));
   console.log(price);
   var total = parseInt(price) + de ;
-  if (placeNewOrder.size != undefined) {
+  if (placeNewOrder.pSize != undefined) {
     $("div#btn").append("<p>" + placeNewOrder.new() + "</p>");
     $("div#btn").append("<p>" + " The Price is " + price + "$" + "</p>");
   } else {
@@ -74,8 +74,8 @@ function placeOrder() {
    $("div#btn").append("<p>" + " The Total Amount is " + total + "$" + "</p>");
   });
 }
-
-  }
+}
+document.getElementById('btn').addEventListener('click', placeOrder);
   $(document).ready(function(){
   $("#delivery").click(function() {
     var loc = prompt("Enter your Location:");
