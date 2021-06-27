@@ -6,10 +6,10 @@
 
 body .navbar{
     float: right;
-    margin-right: 40%;
+    
     overflow: auto;
     text-align: center;
-    position: fixed;
+    position: static;
    
 }
 
@@ -56,7 +56,7 @@ body .sec {
 
 .menu2 .card {
    border-radius: 2%;
-   border-color: rgb(45, 250, 250);
+   
    border-style: double;
    opacity: 200%;
    background-color: transparent;
