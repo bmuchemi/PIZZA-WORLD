@@ -65,7 +65,7 @@ function placeOrder() {
 if (placeNewOrder.pSize===Large) {
   alert("<p>" + " The Price is " + price + "$" + "</p>")
 } else {
-  alert('No order added')
+  alert('No order input')
 }
 $("#delivery").click(function() {
   $("#btn").alert("<p>" + " The Total Amount is " + total + "$" + "</p>");
