@@ -78,7 +78,7 @@ document.getElementById('btn').addEventListener('click', placeOrder);
   $("#delivery").click(function() {
     var loc = prompt("Enter your Location:");
     alert("We will deliver your order in 30-45 min at" + " " + loc + " " + "Thank you for You For Choosing Planet Pizaa!!");
-    alert("Delivery Fees is 200/=" +  "Total price is...." );
+    alert("Delivery Fees is 200/=" + "" + "Total price is...." );
     alert( total );
   });
 
