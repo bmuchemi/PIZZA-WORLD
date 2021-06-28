@@ -1,5 +1,5 @@
-### **DELANI STUDIO** by Benjamin Muchemi
-This project about a fictional studio called Delani Studio.
+### **PIZZA-WORLD** by Benjamin Muchemi
+This project about a fictional online restaurant called Planet-Pizza
 #Pizza-World
 
 #### **Description**
