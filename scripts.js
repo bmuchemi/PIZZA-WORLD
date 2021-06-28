@@ -4,9 +4,7 @@ function Pizza(size, crust, toppings, quantity) {
     this.pToppings = toppings;
     this.pQuantity = quantity;
   }
-  Pizza.prototype.new = function() {
-      return "Your Order // Size:" + this.pizzaSize + ", Crust:" + this.pizzaCrust + ", Toppings:" + this.topping + ", Quantity:" + this.quantity 
-    };
+   var me= "Your Order // Size:" + this.pSize + ", Crust:" + this.pCrust + ", Toppings:" + this.topping + ", Quantity:" + this.quantity ;
 
     
 function placeOrder() {
@@ -60,27 +58,28 @@ function placeOrder() {
   } else {
       alert('Please Enter Topping')
 
-      var de = 5;
+      var de = 200;
   var price = parseInt(sizePrice) + (parseInt(crustSize) + parseInt(topppingsPrice));
   console.log(price);
-  var total = parseInt(price) + de ;
-  if (placeNewOrder.pSize != undefined) {
-    $("div#btn").append("<p>" + placeNewOrder.new() + "</p>");
-    $("div#btn").append("<p>" + " The Price is " + price + "$" + "</p>");
-  } else {
-    alert('No order added');
-  }
-  $("#delivery").click(function() {
-   $("div#btn").append("<p>" + " The Total Amount is " + total + "$" + "</p>");
-  });
+  var total = (price) + de ;
+if (placeNewOrder.pSize===Large) {
+  alert("<p>" + " The Price is " + price + "$" + "</p>")
+} else {
+  alert('No order added')
 }
+$("#delivery").click(function() {
+  $("#btn").alert("<p>" + " The Total Amount is " + total + "$" + "</p>");
+ });
+ }
 }
+
 document.getElementById('btn').addEventListener('click', placeOrder);
   $(document).ready(function(){
   $("#delivery").click(function() {
     var loc = prompt("Enter your Location:");
-    alert("We will deliver your order in 30-45 min at" + " " + loc + " " + "Thank you for You Consideration");
-    alert("Delivery Fees is 5$");
+    alert("We will deliver your order in 30-45 min at" + " " + loc + " " + "Thank you for You For Choosing Planet Pizaa!!");
+    alert("Delivery Fees is 200/=" +  "Total price is...." );
+    alert( total );
   });
 
   });
