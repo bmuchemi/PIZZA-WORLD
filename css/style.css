@@ -80,3 +80,13 @@ section #menu {
 .card .order1 {
     padding-left: 40%;
 }
+ .foot h1 {
+     color: white;
+ }
+.foot {
+    background-color: #202721;
+}
+
+.foot .col-md-2 {
+    color: white;
+}
