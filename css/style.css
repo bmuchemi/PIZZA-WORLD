@@ -46,6 +46,10 @@ body .sec {
     
     
 }
+.sec p {
+    font-weight: bolder;
+    font-size: 300%;
+}
 
 .sec img {
     position: relative;
