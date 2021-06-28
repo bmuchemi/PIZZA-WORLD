@@ -15,12 +15,7 @@ body .navbar{
 
 body .navbar ul {
     list-style-type: none;
-    background: url("images/image1.jpg");
-    
-   
-    
-   
-    
+ 
     
 }
 
@@ -77,11 +72,16 @@ section #menu {
    background-color: transparent;
 }
 
+#cardnew {
+    background-color: #f6f5e2;
+}
+
 .card .order1 {
     padding-left: 40%;
 }
  .foot h1 {
      color: white;
+     padding-left: 40%;
  }
 .foot {
     background-color: #202721;
@@ -89,4 +89,9 @@ section #menu {
 
 .foot .col-md-2 {
     color: white;
+}
+
+.foot .footer {
+    color: white;
+    padding-left: 40%;
 }
