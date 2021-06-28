@@ -3,10 +3,16 @@
     padding: auto;
 }
 
+body {
+    background-color: #d4ccbf;
+}
+
+body .navv {
+    background-color: #d4ccbf;
+}
 
 body .navbar{
     float: right;
-    
     overflow: auto;
     text-align: center;
     position: static;
@@ -38,22 +44,17 @@ body .navbar ul {
     color: crimson;
 }
 
-
-
-body .sec {
-     background: url("images/image1.jpg");
-    background-size: cover;
-    
-    
+section .menu2 {
+    padding-left: 10%;
 }
+
 .sec p {
     font-weight: bolder;
     font-size: 300%;
+    color: crimson;
 }
 
-.sec img {
-    position: relative;
-}
+
 .sec .barrelRoll {
     position: sticky;
     float: right;
