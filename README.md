@@ -4,7 +4,7 @@ This project about a fictional online restaurant called Planet-Pizza
 
 #### **Description**
 *The project is about a fictional online restaurant*
-<img src="images/Screenshot from 2021-06-28 22-46-17.png">
+<img src="https://github.com/bmuchemi/PLANET-PIZZA/blob/master/images/Screenshot%20from%202021-06-28%2022-46-04.png">
 
 
 #### **Languages Used**
